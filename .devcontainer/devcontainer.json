@@ -1,0 +1,10 @@
+{
+  "name": "CMPSC 430 - PHP + MariaDB",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "sudo service mariadb start",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": { "label": "PHP page", "onAutoForward": "openBrowser" }
+  }
+}
